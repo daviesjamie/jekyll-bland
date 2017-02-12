@@ -5,3 +5,203 @@ html {
     font-size: 21px;
   }
 }
+
+body {
+  background-color: #fff;
+  color: #555;
+  line-height: 1.5;
+  padding: 2rem 1.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  font-weight: bold;
+  letter-spacing: -.025rem;
+  line-height: 1.1;
+  margin-bottom: .5rem;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+ol + h1,
+ol + h2,
+ol + h3,
+p + h1,
+p + h2,
+p + h3,
+ul + h1,
+ul + h2,
+ul + h3 {
+  margin-top: 1.5rem;
+}
+
+//---------------------------
+// Emphasis
+//---------------------------
+em,
+strong {
+  padding-left: .1em;
+  padding-right: .1em;
+}
+
+em {
+  color: #666;
+}
+
+strong {
+  color: #333;
+  font-weight: bold;
+}
+
+//---------------------------
+// Lists
+//---------------------------
+ol,
+ul {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  padding-left: 1.5em;
+}
+
+.body li {
+  margin-bottom: .25rem;
+}
+
+ul ul {
+  margin-bottom: .5rem;
+  margin-top: .25rem;
+}
+
+//---------------------------
+// Code
+//---------------------------
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code {
+  background-color: #f5f5f5;
+  border-radius: .15em;
+  color: #d44950;
+  font-size: 90%;
+  font-style: normal;
+  font-weight: normal;
+  padding: .15em .3em;
+
+  @media (max-width: 30em) {
+    word-break: break-word;
+  }
+}
+
+pre {
+  display: block;
+  font-size: .875rem;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+  white-space: pre-wrap;
+  white-space: pre;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.highlight {
+  font-size: .875rem;
+  margin-bottom: 0;
+}
+
+//---------------------------
+// Links
+//---------------------------
+a {
+  color: #222;
+  font-weight: inherit;
+  line-weight: inherit;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+a:hover {
+  color: #000;
+}
+
+h1 a {
+  border-bottom: 0;
+}
+
+.body a,
+.footer a {
+  border-bottom: 1px solid #ddd;
+}
+
+.body a:hover,
+.footer a:hover {
+  border-bottom-color: #000;
+}
+
+//---------------------------
+// Other elements
+//---------------------------
+abbr {
+  background-color: #eee;
+  border-radius: 3px;
+  color: #555;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+blockquote {
+  color: #999;
+  margin: 0 2rem 1rem -2rem;
+  padding: 0 0 0 1.5rem;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+hr {
+  background-color: #eee;
+  border: 0;
+  height: 1px;
+  margin: 2rem auto;
+  width: 100px;
+}
+
+img {
+  border-radius: .25rem;
+  display: block;
+  margin: 0 0 1rem;
+}
