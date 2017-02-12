@@ -1,0 +1,7 @@
+html {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  @media (min-width: 48em) {
+    font-size: 21px;
+  }
+}
