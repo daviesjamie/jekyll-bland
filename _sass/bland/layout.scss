@@ -71,3 +71,40 @@
     margin-left: 1rem;
   }
 }
+
+//---------------------------
+// Post
+//---------------------------
+.post {
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.post img,
+.post iframe {
+  max-width: 100%;
+}
+
+.post iframe {
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  color: #ccc;
+  display: block;
+}
+
+//---------------------------
+// Page
+//---------------------------
+.page {
+  padding-bottom: 4rem;
+}
+
+.page-title {
+  margin-bottom: 2rem;
+}
+
+.page-content > p:first-child {
+  font-size: 1.25rem;
+}
