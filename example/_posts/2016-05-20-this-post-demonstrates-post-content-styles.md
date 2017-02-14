@@ -36,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eg
 
 Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum.
 
-```html
+{% highlight html %}
 <html>
   <head>
   </head>
@@ -44,8 +44,7 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
     <p>Hello, World!</p>
   </body>
 </html>
-```
-
+{% endhighlight %}
 
 In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
 

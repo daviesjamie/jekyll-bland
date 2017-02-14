@@ -15,6 +15,28 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
+{% highlight ruby linenos %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+{% highlight python %}
+def caesar(s, k, decode = False):
+    if decode: k = 26 - k
+        return "".join([chr((ord(i) - 65 + k) % 26 + 65)
+                        for i in s.upper()
+                        if ord(i) >= 65 and ord(i) <= 90 ])
+
+msg = "The quick brown fox jumped over the lazy dogs! Twice, in fact, to make this a really long line!"
+print msg
+enc = caesar(msg, 11)
+print enc
+print caesar(enc, 11, decode = True)
+{% endhighlight %}
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
