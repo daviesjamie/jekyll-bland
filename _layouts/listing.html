@@ -8,7 +8,7 @@ layout: default
 
   {% for post in site.posts %}
     <div class="listing-item">
-      <span class="post-date listing-date">{{ post.date | date:"%b, %-d, %Y" }}</span>
+      <span class="post-date listing-date">{{ post.date | date:"%b %-d, %Y" }}</span>
       <a class="listing-title" href="{{ post.url | relative_url }}">
         {{ post.title | escape }}
       </a>
