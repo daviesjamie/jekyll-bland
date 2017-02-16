@@ -47,6 +47,23 @@
 }
 
 //---------------------------
+// Footer
+//---------------------------
+.body:after {
+  background-color: #eee;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 3rem auto;
+  width: 100px;
+}
+
+.footer {
+  font-size: 90%;
+  text-align: center;
+}
+
+//---------------------------
 // Listing
 //---------------------------
 .listing {

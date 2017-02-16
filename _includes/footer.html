@@ -1,7 +1,12 @@
-<div class="footer">
-  {% if site.author %}
-    {{ site.author | escape }}
-  {% else %}
-    {{ site.title | escape }}
-  {% endif %}
-</div>
+<footer class="footer">
+  <p>
+    {% if site.author %}
+      {{ site.author | escape }}
+    {% else %}
+      {{ site.title | escape }}
+    {% endif %}
+    &middot; {{ site.time | date: '%Y' }}
+    <br>
+    <a href="{{ "/feed.xml" | relative_url }}">Subscribe</a>
+  </p>
+</footer>
