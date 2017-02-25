@@ -22,7 +22,7 @@ layout: default
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
 
-    <h2>{{ t | titlecase }}</h2>
+    <h2 id="{{ t | lowercase }}">{{ t | titlecase }}</h2>
 
     {% for post in posts %}
       <div class="listing-item">

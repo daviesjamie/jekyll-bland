@@ -18,9 +18,10 @@ layout: default
   </div>
 
   {% if page.tags %}
+    {% assign tag_page = site.tag_page | default: '/tags/' | relative_url %}
     <ul class="tag-list">
       {% for tag in page.tags %}
-        <li><a href="#{{ tag }}" class="tag">{{ tag }}</a></li>
+      <li><a href="{{ tag_page }}#{{ tag }}" class="tag">{{ tag }}</a></li>
       {% endfor %}
     </ul>
   {% endif %}
