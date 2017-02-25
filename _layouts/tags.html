@@ -12,7 +12,7 @@ layout: default
     {% for tag in sorted_tags %}
       <li>
         <a href="#{{ tag[0] }}" class="tag">
-          {{ tag[0] }} <span>{{ tag[1].size }}</span>
+          {{ tag[0] }} <span class="count">{{ tag[1].size }}</span>
         </a>
       </li>
     {% endfor %}

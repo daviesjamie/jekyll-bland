@@ -79,6 +79,10 @@
   }
 }
 
+.listing-item + h2 {
+  margin-top: 2rem;
+}
+
 .listing-date {
   color: #ccc;
   display: block;
@@ -127,4 +131,40 @@
 
 .page-content > p:first-child {
   font-size: 1.25rem;
+}
+
+//---------------------------
+// Tags
+//---------------------------
+.tag {
+  background-color: #f5f5f5;
+  border-bottom: none !important;
+  border-radius: 3px;
+  color: #555;
+  font-size: .85rem;
+  padding: .3rem .6rem;
+}
+
+.tag:hover {
+  background-color: #ddd;
+  border-bottom: none !important;
+}
+
+.tag .count {
+  color: #5fb3b3;
+  font-size: .7rem;
+  vertical-align: super;
+}
+
+.tag-list {
+  display: block;
+  padding-left: 0;
+}
+
+.tag-list li {
+  display: inline-block;
+  line-height: 2em;
+  margin-bottom: 0;
+  margin-right: .25rem;
+  white-space: nowrap; // prevent counts breaking to a new line
 }
