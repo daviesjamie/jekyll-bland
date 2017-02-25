@@ -1,7 +1,7 @@
 html {
   font-family: $font-main;
   font-size: $small-font-size;
-  @media (min-width: 48em) {
+  @media (min-width: $screen-medium) {
     font-size: $base-font-size;
   }
 }
@@ -109,7 +109,7 @@ code {
   font-weight: normal;
   padding: .15em .3em;
 
-  @media (max-width: 30em) {
+  @media (max-width: $screen-small) {
     word-break: break-word;
   }
 }
