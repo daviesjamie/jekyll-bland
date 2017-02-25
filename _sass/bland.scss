@@ -1,3 +1,11 @@
+// Text
+$font-main: Georgia, "Times New Roman", serif !default;
+$font-mono: Menlo, Monaco, "Courier New", monospace !default;
+
+$base-font-size: 21px !default;
+$base-line-height: 1.5 !default;
+$small-font-size: 16px !default;
+
 @import
   "bland/reset",
   "bland/base",

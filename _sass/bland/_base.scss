@@ -1,15 +1,15 @@
 html {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 16px;
+  font-family: $font-main;
+  font-size: $small-font-size;
   @media (min-width: 48em) {
-    font-size: 21px;
+    font-size: $base-font-size;
   }
 }
 
 body {
   background-color: #fff;
   color: #555;
-  line-height: 1.5;
+  line-height: $base-line-height;
   padding: 2rem 1.5rem;
 }
 
@@ -97,7 +97,7 @@ ul ul {
 //---------------------------
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: $font-mono;
 }
 
 code {
