@@ -7,7 +7,7 @@
 // Header
 //---------------------------
 .masthead {
-  color: #777;
+  color: $color-text-light;
   font-size: 1rem;
   margin-bottom: 0;
 
@@ -18,7 +18,7 @@
 }
 
 .masthead:after {
-  background-color: #eee;
+  background-color: $color-grey-lighter;
   content: "";
   display: block;
   height: 1px;
@@ -50,7 +50,7 @@
 // Footer
 //---------------------------
 .body:after {
-  background-color: #eee;
+  background-color: $color-grey-lighter;
   content: "";
   display: block;
   height: 1px;
@@ -84,7 +84,7 @@
 }
 
 .listing-date {
-  color: #ccc;
+  color: $color-date;
   display: block;
   margin-bottom: 0;
   margin-top: 0;
@@ -113,7 +113,7 @@
 }
 
 .post-date {
-  color: #ccc;
+  color: $color-date;
   display: block;
   margin-bottom: 1rem;
 }
@@ -137,21 +137,21 @@
 // Tags
 //---------------------------
 .tag {
-  background-color: #f5f5f5;
+  background-color: $color-grey-lightest;
   border-bottom: none !important;
   border-radius: 3px;
-  color: #555;
+  color: $color-text;
   font-size: .85rem;
   padding: .3rem .6rem;
 }
 
 .tag:hover {
-  background-color: #ddd;
+  background-color: $color-grey-light;
   border-bottom: none !important;
 }
 
 .tag .count {
-  color: #5fb3b3;
+  color: $color-theme;
   font-size: .7rem;
   vertical-align: super;
 }

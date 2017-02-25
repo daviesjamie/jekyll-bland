@@ -6,6 +6,22 @@ $base-font-size: 21px !default;
 $base-line-height: 1.5 !default;
 $small-font-size: 16px !default;
 
+// Colours
+$color-theme: #5fb3b3 !default;
+$color-background: #fff !default;
+$color-text: #555 !default;
+$color-text-dark: #333 !default;
+$color-text-light: #666 !default;
+$color-text-ligher: #999 !default;
+$color-link: #222 !default;
+$color-link-hover: #000 !default;
+$color-link-underline: #ddd !default;
+$color-date: #ccc !default;
+
+$color-grey-light: #ddd !default;
+$color-grey-lighter: #eee !default;
+$color-grey-lightest: #f5f5f5 !default;
+
 @import
   "bland/reset",
   "bland/base",

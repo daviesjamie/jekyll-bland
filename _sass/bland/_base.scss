@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #555;
+  background-color: $color-background;
+  color: $color-text;
   line-height: $base-line-height;
   padding: 2rem 1.5rem;
 }
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: $color-text-dark;
   font-weight: bold;
   letter-spacing: -.025rem;
   line-height: 1.1;
@@ -65,11 +65,11 @@ strong {
 }
 
 em {
-  color: #666;
+  color: $color-text-light;
 }
 
 strong {
-  color: #333;
+  color: $color-text-dark;
   font-weight: bold;
 }
 
@@ -101,9 +101,9 @@ pre {
 }
 
 code {
-  background-color: #f5f5f5;
+  background-color: $color-grey-lightest;
   border-radius: .15em;
-  color: #5fb3b3;
+  color: $color-theme;
   font-size: 90%;
   font-style: normal;
   font-weight: normal;
@@ -143,7 +143,7 @@ pre code {
 // Links
 //---------------------------
 a {
-  color: #222;
+  color: $color-link;
   font-weight: inherit;
   line-weight: inherit;
   text-decoration: none;
@@ -153,7 +153,7 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: $color-link-hover;
 }
 
 h1 a {
@@ -162,21 +162,21 @@ h1 a {
 
 .body a,
 .footer a {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $color-link-underline;
 }
 
 .body a:hover,
 .footer a:hover {
-  border-bottom-color: #000;
+  border-bottom-color: $color-link-hover;
 }
 
 //---------------------------
 // Other elements
 //---------------------------
 abbr {
-  background-color: #eee;
+  background-color: $color-grey-lighter;
   border-radius: 3px;
-  color: #555;
+  color: $color-text;
   display: inline-block;
   font-size: 13px;
   font-weight: bold;
@@ -186,8 +186,8 @@ abbr {
 }
 
 blockquote {
-  border-left: .5rem solid #e5e5e5;
-  color: #999;
+  border-left: .5rem solid $color-grey-lighter;
+  color: $color-text-lighter;
   margin: 0 2rem 1rem -2rem;
   padding: 0 0 0 1.5rem;
 }
@@ -197,7 +197,7 @@ blockquote p:last-child {
 }
 
 hr {
-  background-color: #eee;
+  background-color: $color-grey-lighter;
   border: 0;
   height: 1px;
   margin: 2rem auto;
