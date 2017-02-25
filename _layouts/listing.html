@@ -6,9 +6,10 @@ layout: default
 
   {{ content }}
 
+  {% assign date_format = site.listing_date_format | default:site.date_format | default:"%b %-d, %Y" %}
   {% for post in site.posts %}
     <div class="listing-item">
-      <span class="listing-date">{{ post.date | date:"%b %-d, %Y" }}</span>
+      <span class="listing-date">{{ post.date | date:date_format }}</span>
       <a class="listing-title" href="{{ post.url | relative_url }}">
         {{ post.title | escape }}
       </a>

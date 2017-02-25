@@ -12,3 +12,5 @@ theme: bland
 exclude:
   - Gemfile
   - Gemfile.lock
+
+listing_date_format: "%b %Y"

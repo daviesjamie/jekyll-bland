@@ -7,6 +7,7 @@ layout: default
   <header>
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <span class="post-date">
+      {% assign date_format = site.post_date_format | default:site.date_format | default:"%b %-d, %Y" %}
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date:"%b %-d, %Y" }}
       </time>
