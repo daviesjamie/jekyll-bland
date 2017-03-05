@@ -4,6 +4,11 @@ html {
   @media (min-width: $screen-medium) {
     font-size: $base-font-size;
   }
+
+  // Optimise text for legibility
+  text-rendering: optimizeLegibility;
+   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
