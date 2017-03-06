@@ -6,7 +6,7 @@ layout: default
 
   {{ content }}
 
-  {% assign date_format = site.listing_date_format | default:site.date_format | default:"%b %-d, %Y" %}
+  {% assign date_format = site.listing_date_format | default:site.date_format | default:"%B %-d, %Y" %}
   {% for post in site.posts %}
     <div class="listing-item">
       <span class="listing-date">{{ post.date | date:date_format }}</span>
