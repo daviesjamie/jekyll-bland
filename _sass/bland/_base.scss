@@ -215,3 +215,10 @@ img {
   display: block;
   margin: 0 0 1rem;
 }
+
+figure > figcaption {
+  color: $color-text-lighter;
+  font-size: .85rem;
+  margin-top: -.5rem;
+  text-align: center;
+}
