@@ -81,7 +81,7 @@ You can also create your stylesheets and `@include` them here to further customi
 
 ### Tags
 
-If you choose to asign tags to your posts, then they will appear at the bottom of each post. Clicking on one of these tags will attempt to link to the section for that tag on the tags page, which will list all other posts under that tag.
+If you choose to assign tags to your posts, then they will appear at the bottom of each post. Clicking on one of these tags will attempt to link to the section for that tag on the tags page, which will list all other posts under that tag.
 
 Tag page, you say? Yes. You'll need to make this yourself, by creating a new page and putting the `layout:tags` key in the front matter. The default path for the tags page is `/tags/index.html`, but this can be adjusted with the `tags_page` key in your site's `_config.yml`.
 
@@ -89,13 +89,26 @@ Tag page, you say? Yes. You'll need to make this yourself, by creating a new pag
 
 By default, the navigation links at the top of the site will automatically include a link for every page in your jekyll site. If you want to exclude a page from the nav, you can simply include a `nav_exclude` key as part of the page's front matter:
 
-```
+```yaml
 ---
 layout: tags
 permalink: /tags/
 title: Tags
 nav_exclude: true
 ---
+```
+
+### Date formats
+
+The format of the date used in post listings and at the top of each post page can be easily customised through the following settings in your site's `_config.yml`:
+
+```yaml
+# Use the same date in both listings and post pages
+date_format: "%-d %b %Y"
+
+# Or customise them separately:
+listing_date_format: "%-d %b %Y"
+post_date_format: "%-d %B %Y"
 ```
 
 ## Development
