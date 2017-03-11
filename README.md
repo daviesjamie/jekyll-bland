@@ -1,5 +1,7 @@
 # jekyll-bland
 
+[![Build Status](https://travis-ci.org/daviesjamie/jekyll-bland.svg?branch=master)](https://travis-ci.org/daviesjamie/jekyll-bland)
+
 *bland* is yet another "minimal" theme for Jekyll: it is very plain-looking by design, with no frills, embellishment or fancy fandangles to be found.
 
 ![bland theme preview](/screenshot.png)
