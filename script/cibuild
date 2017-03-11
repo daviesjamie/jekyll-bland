@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+echo "Building the example site..."
+bundle exec jekyll build --source example
+
+if test -e "./_site/index.html"; then
+    echo "It builds!"
+    rm -rf _site
+else
+    echo "Uh oh. The example site doesn't seem to build."
+    exit 1
+fi
+
+echo "Building gem..."
+gem build jekyll-bland.gemspec
