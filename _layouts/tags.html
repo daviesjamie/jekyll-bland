@@ -18,7 +18,7 @@ layout: default
     {% endfor %}
   </ul>
 
-  {% assign date_format = site.listing_date_format | default:site.date_format | default:"%B %-d, %Y" %}
+  {% assign date_format = site.listing_date_format | default:site.date_format | default:"%-d %B %Y" %}
   {% for tag in sorted_tags %}
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
