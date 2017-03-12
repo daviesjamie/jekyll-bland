@@ -1,0 +1,13 @@
+<ul>
+  {% for page in site.pages %}
+    {% if page.title %}
+      {% unless page.nav_exclude %}
+        <li>
+          <a href="{{ page.url | relative_url }}">
+            {{ page.title | escape }}
+          </a>
+        </li>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+</ul>
