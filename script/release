@@ -1,0 +1,40 @@
+#!/bin/sh
+# Tag and push a release
+
+set -e
+
+# Make sure we're in the project root
+cd $(dirname "$0")/..
+
+# Make sure we're on the master branch
+(git branch | grep -q 'master') || {
+    echo "Won't release from a non-master branch"
+    exit 1
+}
+
+echo "Updating bundles..."
+bundle update
+
+echo "Removing old gems..."
+rm -rf jekyll-bland-*.gem
+
+echo "Building new gem..."
+gem build -q jekyll-bland.gemspec
+
+tag=v`ls jekyll-bland-*.gem | sed 's/^jekyll-bland-\(.*\)\.gem$/\1/'`
+echo "Using release '${tag}'"
+
+# Make sure we haven't released this version before
+git fetch -t origin
+(git tag -l | grep -q "$tag") && {
+    echo "There's already a '${tag}' tag!"
+    exit 1
+}
+
+echo "Creating git tag..."
+git tag "$tag"
+git push origin master
+git push origin "$tag"
+
+echo "Pushing gem..."
+gem push jekyll-bland-*.gem
