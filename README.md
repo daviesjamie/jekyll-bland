@@ -7,6 +7,8 @@
 
 ![bland theme preview](/screenshot.png)
 
+For a preview of the theme, take a look at [jamiedavies.me](https://jamiedavies.me). It is running *bland* with only a couple of small modifications (which you can view in the [repo for the site](https://github.com/daviesjamie/jamiedavies.me)).
+
 ## Features
 
 The main feature of bland is that there are very few features. What bland offers is a very stable, clean base that you can extend further to fulfil your own needs, or leave as-is for a snappy lightweight site.
