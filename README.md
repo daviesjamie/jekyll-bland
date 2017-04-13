@@ -9,19 +9,19 @@
 
 ## Features
 
-The main feature of bland is that there are very few features. What bland offers is a very stable, clean base that you can extend further to fulful your own needs, or leave as-is for a snappy lightweight site.
+The main feature of bland is that there are very few features. What bland offers is a very stable, clean base that you can extend further to fulfil your own needs, or leave as-is for a snappy lightweight site.
 
 What bland can offer you is:
  - 4 (relatively) responsive layouts for your content:
    - `page` is a layout for your pages
    - `post` is a layout for your posts
    - `listing` is a layout for listing posts
-   - `tags` is a layout for generating a list of your posts and the tags they belong to
+   - `tags` is a layout for generating a list of your tags and the posts that have those tags
  - An elegant, clean look
  - Simple CSS that is easy to extend and customise
  - Nothing else!
 
-Want to add Google Analytics to your site? Or Disqus comments? Override the default layouts and add some includes, and *do it yourself*.
+Want to add Google Analytics to your site? Or Disqus comments? Override the default layouts, add some includes, and *do it yourself*.
 
 ## Installation
 
