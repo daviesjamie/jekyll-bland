@@ -1,3 +1,9 @@
+# 1.0.2 - 2017/05/27
+
+ * Centrally align images and figures by default
+ * Rename color-theme variable to color-mono
+ * Add some extra fonts to default monospace font stack
+
 # 1.0.1 - 2017/03/12
 
  * Standardise default date format
