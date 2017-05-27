@@ -1,3 +1,8 @@
+# 1.0.3 - 2017/05/27
+
+ * Bump version as 1.0.2 gem was accidentally built and pushed on wrong
+   commit, and gem versions cannot be overwritten.
+
 # 1.0.2 - 2017/05/27
 
  * Centrally align images and figures by default
