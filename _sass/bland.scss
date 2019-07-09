@@ -1,10 +1,17 @@
 // Text
 $font-main: Georgia, "Times New Roman", serif !default;
 $font-mono: Menlo, Monaco, Consolas, "Andale Mono", "Lucida Console", "Courier New", monospace !default;
+$font-headings: $font-main !default;
+$font-tags:     $font-main !default;
 
-$base-font-size:  21px !default;
-$small-font-size: 16px !default;
-$base-line-height: 1.5 !default;
+$base-font-size:   21px !default;
+$small-font-size:  16px !default;
+$base-line-height: 1.5  !default;
+
+$heading-line-height: 1.1 !default;
+
+$base-letter-spacing:    normal     !default;
+$heading-letter-spacing: -0.025rem  !default;
 
 // Colours
 $color-background:     #fff    !default;
