@@ -1,3 +1,10 @@
+# 1.1.0 - 2017/05/27
+
+ * Add variables for more typography-related CSS parameters, allowing them to
+   be easily customised in websites using this theme
+ * Tweak some default CSS styles
+ * Update dependencies
+
 # 1.0.3 - 2017/05/27
 
  * Bump version as 1.0.2 gem was accidentally built and pushed on wrong
